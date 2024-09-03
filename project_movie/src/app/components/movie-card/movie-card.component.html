@@ -1,0 +1,12 @@
+<div class="moviecard">
+    <img [src]="data.backdrop_path" alt="{{data.title}}" class="moviecard__image">
+    <div class="moviecard__info">
+        <h2 class="moviecard__title">{{data.title}}</h2>
+        <p class="moviecard__about">{{data.overview}}</p>
+        <p class="moviecard__rating">{{data.rating}}</p>
+    </div>
+    <div class="moviecard__actions">
+        <button (click)="addToFavorites()" class="moviecard__btn">додати до олюблених</button>
+        <button (click)="addToWathList()" class="moviecard__btn">преглянути</button>
+    </div>
+</div>

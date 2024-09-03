@@ -1,0 +1,12 @@
+<div class="block__list">
+    <app-movie-card (addfavorite)="criateFavoritList($event)" (addWhatchList)="criateWhatchList($event)">
+    </app-movie-card>
+</div>
+<div>
+    <p>олюблені</p>
+    <p>{{movieFavorit}}</p>
+</div>
+<div>
+    <p>преглянути</p>
+    {{movieWhotch}}
+</div>
